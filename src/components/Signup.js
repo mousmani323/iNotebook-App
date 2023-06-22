@@ -15,7 +15,7 @@ let navigate = useNavigate();
       props.showAlert("Password and Confirm Password must match", "danger");
       return;
     }
-    const response = await fetch("http://i-notebook-api.vercel.app/api/auth/createUser", {
+    const response = await fetch("https://i-notebook-api.vercel.app/api/auth/createUser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
